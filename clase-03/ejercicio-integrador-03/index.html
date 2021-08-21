@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y enlaces</title>
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="icon" href="./imagenes/logo_favicon.ico">
+    <script src="https://kit.fontawesome.com/9640448c9c.js" crossorigin="anonymous"></script>
+</head>
+<body background="./imagenes/fondo_ej_integrador.jpg">
+
+    <h1>Utilizacion de Tablas, enlaces e iframe</h1>
+    <a name="enlaces"></a>
+
+    <a href="./listasSimples.html">Listas simples</a>
+    <a href="./listasSimples.html#listasMultinivel">Listas multinivel</a>
+    <a href="#enlaces">Tablas-Enlaces-Iframe</a>
+    <br><br>
+ <!--    <i class="fas fa-apple-alt fa-lg"></i>
+    <i class="fas fa-apple-alt fa-2x"></i>
+    <i class="fas fa-apple-alt fa-3x"></i>
+    <i class="fas fa-apple-alt fa-4x"></i> -->
+
+    <table>
+        <thead bgcolor="#D1D0CF">
+            <tr>
+                <th>Imagen</th>
+                <th>Comida</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fas fa-apple-alt"></i></i></td>
+                <td>Manzana</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-hamburger"></i></td>
+                <td>Hamburguesa</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-pizza-slice"></i></td>
+                <td>Pizza</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Restaurante "Las rosas"</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Entradas</td>
+                <td>Atún en escabeche</td>
+            </tr>
+            <tr>
+                <td>Berenjenas con queso</td>
+            </tr>
+            <tr>
+                <td>Croquetas de papas con queso</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Platos principales</td>
+                <td>Pescado al horno</td>
+            </tr>
+            <tr>
+                <td>Asado con guarnición</td>
+            </tr>
+            <tr>
+                <td>Pollo al champignon con guarnición</td>
+            </tr>
+            <tr>
+                <td>Tallarines con salsa bolognesa</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Más fotos: <a href="https://picsum.photos/" target="_blank">Picsum Photos</a></p>
+    <p>Para ver la imagen de fondo haz click <a href="./imagenes/fondo.jpg" target="_blank">aquí</a></p>
+    <p>Contacto: <a href="mailto:mail@mail.com?subject=Contacto">mail@mail.com</a></p>
+
+    <h2>Ubicación:</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9409930917013!2d-58.40815168501324!3d-34.605653580458984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf2a00d73df%3A0xc90b4ce1a7523378!2sAv.%20Pueyrred%C3%B3n%20400%2C%20C1032ABQ%20CABA!5e0!3m2!1ses-419!2sar!4v1629383748017!5m2!1ses-419!2sar" width="290" height="250" style="border:0;" allowfullscreen="" loading="lazy">Mapa</iframe>
+</body>
+</html>

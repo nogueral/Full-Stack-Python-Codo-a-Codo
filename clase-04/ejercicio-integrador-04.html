@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body bgcolor="#D1D0CF">
+    <form action="Link" method="POST">
+        <fieldset align="center">
+            <legend align="center">Formulario de inscripcion</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br><br>
+            <label for="edad">Edad: </label>
+            <input type="number" name="edad" id="edad" min="1" max="99">
+            <br><br>
+            <label for="fnac">Fecha de nacimiento: </label>
+            <input type="date" name="fnac" id="fnac">
+            <br><br>
+            <p>Genero: </p>
+            <input type="radio" name="opcion" value="m">Masculino
+            <input type="radio" name="opcion" value="f">Femenino
+            <input type="radio" name="opcion" value="o">Otro
+            <br><br>
+            <p>Cursos a los que se inscribe: </p>
+            <input type="checkbox" name="js" id="js">Javascript
+            <input type="checkbox" name="html" id="html">HTML
+            <input type="checkbox" name="css" id="css">CSS
+            <br><br>
+            <input type="checkbox" name="terminos" id="terminos">
+            <label for="terminos"> Acepto terminos y condiciones</label>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+
+    </form>
+</body>
+</html>
