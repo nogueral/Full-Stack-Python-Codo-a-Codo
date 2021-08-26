@@ -1,0 +1,49 @@
+
+header{
+    border: 1px solid black;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+nav{
+    border: 1px solid black;
+    background-color:darkorchid;
+    height: 30px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+a{
+    border: 1px solid black;
+    background-color: darkcyan;
+    margin-left: 50px;
+    padding: 5px;
+}
+
+main{
+    border: 1px solid black;
+    background-color: red;
+    text-align: center;
+    height: 300px;
+}
+
+div{
+    border: 1px solid black;
+    background-color: royalblue;
+    height: 100px;
+    padding-top: 50px;
+    margin: 50px 25px;
+}
+
+article{
+    border: 1px solid black;
+    background-color: salmon;
+    height: 100px;
+    text-align: center;
+}
+
+footer{
+    border: 1px solid black;
+    text-align: center;
+    background-color: slateblue;
+}

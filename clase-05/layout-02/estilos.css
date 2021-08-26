@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+}
+
+header{
+    border: 2px groove grey;
+    height: 100px;
+    text-align: center;
+    background-color: hotpink;
+    margin: 10px;
+}
+
+nav{
+    border: 2px groove grey;
+    background-color: lightblue;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+nav h4 {
+    margin: 0;
+}
+article {
+    border: 2px groove grey;
+    background-color: lightslategray;
+    height: 400px;
+    text-align: center;
+    margin: 10px;
+}
+
+section{
+    border: 2px groove grey;
+    margin: 10px;
+    background-color: orange;
+    height: 110px;
+}
+
+footer{
+    border: 2px groove grey;
+    margin: 10px;
+    background-color: orchid;
+    text-align: center;
+    height: 50px;
+}

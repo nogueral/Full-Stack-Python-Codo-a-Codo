@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+
+header{
+    border: 1px ridge blue;
+    background-color: orchid;
+    height: 80px;
+}
+
+header h4{
+   padding: 30px;
+}
+
+nav{
+    border: 1px ridge blue;
+    background-color: lightskyblue;
+    height: 80px;
+}
+
+nav h4{
+    padding: 30px;
+ }
+
+section{
+    border: 1px ridge blue;
+    background-color: lightseagreen;
+    height: 400px;
+}
+
+article{
+    border: 1px ridge blue;
+    background-color: violet;
+    height: 350px;
+    margin: 10px;
+}
+
+article h4{
+    padding: 150px;
+}
+
+footer{
+    border: 1px ridge blue;
+    background-color: orange;
+    height: 100px;
+}
+
+footer h4{
+    padding: 45px;
+}
