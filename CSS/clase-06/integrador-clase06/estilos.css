@@ -1,0 +1,60 @@
+body{
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-color:slateblue;
+}
+
+nav{
+    text-align: center;
+}
+
+a{
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: slateblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer{
+    background-color:slateblue;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.formulario{
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 25px;
+    margin: 10px 450px;
+    color: slateblue;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 20px;
+    border: 2px solid slateblue;
+}
+
+#boton{
+    text-align: right;
+}
+
+#requerido{
+    font-size: 75%;
+    font-weight: normal;
+    font-style: italic;
+}
