@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    /*height: 500px;*/
+    background: lightblue;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    /*align-items: stretch;*/
+    /*align-content: space-around;*/
+    
+}
+
+.hijo{
+    background: blue;
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 0;*/
+    flex: 1 1 auto; /*Prevenimos desbordamientos*/
+}
+
+.otraclase{
+    /*order: 1;*/
+    align-self: flex-end;
+}
