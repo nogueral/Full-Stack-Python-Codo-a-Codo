@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E9ECF4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header"
+                        "seccion seccion seccion"
+                        "footer footer footer";
+}
+
+.contenedor .header,
+.contenedor .seccion,
+.contenedor .footer{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+img{
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+img:hover{
+    transform: scale(1.1,1.1);
+}
+
+h3{
+    color: #D2691E;
+    margin-bottom: 10px;
+}
+
+.contenedor .header{
+    background: #52A4C7;
+    color:#fff;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .navegacion a{
+        color:#fff;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+
+.contenedor .seccion{
+    grid-area: seccion;
+}
+    
+.widget-1, .widget-2,
+.widget-3, .widget-4{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.contenedor .footer{
+    background: #526FC7;
+    color: #fff;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .redes a{
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+@media screen and (max-width: 768px){
+    .widget-1, .widget-2,
+    .widget-3, .widget-4{
+        flex-direction: column;
+    }
+        img{
+            width: 100%;
+            height: 350px;
+        }
+}
+
+@media screen and (max-width: 500px){
+    img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    img{
+        height: 200px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/gato.ico">
+    <link rel="stylesheet" href="./estilos/contacto.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./validaciones.js" defer></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="jumbotron">
+              <h1>Formulario de contacto</h1>      
+              <p>Por favor complete el formulario y luego presione enviar, le responderemos a la brevedad.</p>
+            </div>    
+        </div>
+    </header>
+    <section>
+        <form action="./index.html" class="container" id="formulario">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" class="form-control" placeholder="Ingrese su apellido" id="apellido">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electronico:</label>
+              <input type="email" class="form-control" name="email" placeholder="Ingrese direccion de correo" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="consulta">Consulta:</label>
+                <textarea name="consulta" id="consulta" class="form-control" placeholder="Ingrese consulta" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="validateForm(document.getElementById('formulario'))">Enviar</button>
+          </form> 
+    </section>
+</body>
+</html>
