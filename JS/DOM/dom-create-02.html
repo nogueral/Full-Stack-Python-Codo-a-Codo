@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM create</title>
+    <style>
+        .estilo{
+            background-color: blanchedalmond;
+            color: blue;
+            border: 3px dashed red;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let titulo = document.createElement("h1");
+        titulo.innerHTML = "DOM Create";
+        titulo.style.textDecoration = "underline";
+        titulo.style.textAlign = "center";
+        document.body.appendChild(titulo);
+
+        let div = document.createElement("div");
+        div.className = "divFromJS";
+        let title = document.createTextNode("Div creado desde JS");
+        div.appendChild(title);
+        div.style.color = "red";
+        div.style.background = "lightblue";
+        div.style.border = "2px solid black";
+        div.style.padding = "10px";
+        div.style.margin = "10px";
+        document.body.appendChild(div);
+
+        let div2 = document.createElement("div");
+        div2.className = "estilo";
+        div2.innerText = "Segundo div creado from JS";
+        document.body.appendChild(div2);
+
+        item = document.getElementsByClassName("divFromJS");
+        cln = item[0].cloneNode(true);
+        document.body.appendChild(cln);
+
+        item2 = document.getElementsByClassName("divFromJS");
+        cln2 = item[0].cloneNode(false);
+        document.body.appendChild(cln2);
+    </script>
+</body>
+</html>

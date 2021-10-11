@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ejemplo">Primer parrafo</div>
+    <div class="ejemplo">Segundo parrafo</div>
+    <div class="ejemplo">Tercero parrafo</div>
+    <button onclick="cambiarUnParrafo()">Cambiar un parrafo</button>
+    <button onclick="cambiarTodos()">Cambiar todos</button>
+    <script>
+        function cambiarUnParrafo(){
+            let element = document.getElementsByClassName("ejemplo");
+            element[0].innerHTML = "Se cambia el primer parrafo";
+        }
+
+        function cambiarTodos(){
+            let element = document.getElementsByClassName("ejemplo");
+            
+            for (const key in element) {
+                element[key].innerHTML = `Se cambia parrafo en posicion ${key}`;
+            }
+        }
+    </script>
+</body>
+</html>

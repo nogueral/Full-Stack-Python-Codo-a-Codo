@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM4</title>
+</head>
+<body>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <hr>
+        <label for="">Apellido: <input type="text" name="fname" id="apellido" value="Perez"></label><br><br>
+        <label for="">Nombre: <input type="text" name="fname" id="nombre" value="Juan"></label><br><br>
+        <button onclick="mostrarTag()">tagName</button>
+        <button onclick="mostrarValue()">Value</button>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+    <hr>
+    <p>Lista desordenada</p>
+    <ul>
+        <li>Cafe</li>
+        <li>Te</li>
+        <li>Leche</li>
+    </ul><br>
+    <label for="">Que elemento desea? (0,1,2) <input name="seleccion" type="number" min="0" max="2" value="0"></label><br>
+    <button onclick="obtenerElemento()">Obtener elemento</button>
+    <p id="demo3"></p>
+    <script>
+        function mostrarTag(){
+            tag = document.getElementsByName("fname")[0].tagName;
+            document.getElementById("demo1").innerHTML = tag;
+
+        }
+
+        function mostrarValue(){
+            value = document.getElementsByName("fname")[1].value;
+            document.getElementById("demo2").innerHTML = value;
+
+        }
+
+        function obtenerElemento(){
+            element = document.getElementsByTagName("li");
+            value = document.getElementsByName("seleccion")[0].value;
+            document.getElementById("demo3").innerHTML = element[value].textContent;
+
+        }
+    </script>
+</body>
+</html>
