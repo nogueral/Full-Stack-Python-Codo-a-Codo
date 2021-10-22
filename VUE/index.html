@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a VUE</title>
+</head>
+<body>
+    <h1>Comenzamos con VUE</h1>
+
+    <div id="app">
+        <h2 v-text="mensaje"></h2>
+        <p>{{mensaje}}</p>
+        <h3 v-text="nombre"></h3>
+        <p>Profesor: {{nombre}}</p>
+        <img v-bind:src="img" alt="animales"><br>
+        <a href="#" v-bind:title="mensaje">mail@mail.com</a>
+    </div>
+
+    <h2>Ejemplo v-for</h2>
+    <ul id="ej1">
+        <li v-for="fruta in frutas">
+            {{fruta.nombre}}
+        </li>
+    </ul>
+
+    <div id="ej2">
+        <h2>{{titulo}}</h2>
+        <ul>
+            <li v-for="fruta in frutas">
+                {{fruta.nombre}} - {{fruta.cantidad}}
+                <span v-if="fruta.cantidad===0"> - Sin Stock</span>
+                <span v-else-if="fruta.cantidad<5"> - Stock bajo</span>
+                <span v-if="fruta.cantidad>=5"> - Stock alto</span>
+            </li>
+        </ul>
+    </div>
+
+    <h2>V-Model</h2>
+    <div id="ej_vmodel">
+        <p>{{mensaje}}</p>
+        <p><input v-model="mensaje"></p>
+    </div>
+
+    <h2>V-On</h2>
+    <div id="ej_von">
+        <button v-on:click="contador += 1">Agregar 1</button>
+        <button v-on:click="contador -= 1">Quitar 1</button>
+        <p>Hiciste click {{contador}} veces</p>
+    </div>
+
+    <h2>Agregar elementos a la instancia VUE</h2>
+    <div id="agregar">
+        <input type="text" v-model="nuevaFruta" @keyup.enter="agregarFrutaConIf">
+        <button v-on:click=agregarFrutaConIf()>Agregar Fruta</button>
+        <ul>
+            <li v-for="fruta in frutas">
+                {{fruta.nombre}} - {{fruta.cantidad}}
+                <span v-if="fruta.cantidad===0"> - Sin Stock</span>
+                <span v-else-if="fruta.cantidad<5"> - Stock bajo</span>
+                <span v-if="fruta.cantidad>=5"> - Stock alto</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="introvue.js"></script>
+</body>
+</html>
